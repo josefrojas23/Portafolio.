@@ -1,0 +1,250 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general y fuente base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro, estilo gamer */
+    color: #e5e5e5; /* Texto claro */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 15px 25px;
+    border-bottom: 3px solid #00ff00; /* Luminiscente verde gamer */
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.3);
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar .menu a {
+    color: #e5e5e5;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #00ff00; /* Efecto verde en los enlaces */
+    transform: scale(1.1);
+}
+
+/* Sección del Carrusel */
+.seccion-cuadros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 1200px;
+    position: relative;
+    padding: 20px;
+    border-bottom: 3px solid #00ff00;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cuadro {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.4);
+    width: 30%;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    border: 3px solid #00ff00; /* Borde verde neon */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cuadro.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.cuadro img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.cuadro h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #00ff00; /* Título verde neón */
+    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+}
+
+.cuadro p {
+    font-size: 1rem;
+    color: #cccccc; /* Texto gris claro */
+    margin: 10px 0;
+}
+
+.cuadro .btn {
+    background-color: #ff4500; /* Naranja brillante */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cuadro .btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Controles del Carrusel */
+button {
+    background-color: #00ff00;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: scale(1.2);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #e5e5e5;
+    padding: 40px 20px;
+    border-top: 3px solid #00ff00;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-left {
+    width: 40%;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.footer-left h4 {
+    margin-bottom: 10px;
+    color: #00ff00;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin: 8px 0;
+}
+
+.footer-left ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer-left ul li a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+.footer-separator {
+    height: 80%;
+    border-left: 2px solid #00ff00;
+    margin: 0 20px;
+}
+
+.footer-right {
+    width: 40%;
+    text-align: center;
+}
+
+.footer-right h4 {
+    margin-bottom: 10px;
+    color: #00ff00;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(0) invert(1);
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(0) invert(1) drop-shadow(0 4px 10px rgba(255, 255, 255, 0.4));
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #cccccc;
+}

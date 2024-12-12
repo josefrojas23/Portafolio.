@@ -1,0 +1,246 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general y fuente base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Fondo gris oscuro */
+    padding: 10px 20px;
+    border-bottom: 2px solid #ffffff; /* Línea blanca de separación */
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar .menu a {
+    color: #ffffff; /* Enlaces blancos */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #fff200; /* Color de hover en naranja */
+    transform: scale(1.1);
+}
+
+/* Sección de los cuadros */
+.seccion-cuadros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    border-bottom: 2px solid #ffffff; /* Línea blanca de separación entre la sección y el footer */
+}
+
+/* Estilo de cada cuadro */
+.cuadro {
+    background-color: #050012; /* Fondo oscuro de los cuadros */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #ffffff; /* Línea blanca alrededor de cada cuadro */
+}
+
+.cuadro:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen dentro del cuadro */
+.cuadro img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Títulos y descripciones dentro del cuadro */
+.cuadro h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #ffffff; /* Título blanco */
+}
+
+.cuadro p {
+    font-size: 1rem;
+    color: #d1d1d1; /* Texto gris claro */
+    margin: 10px 0;
+}
+
+/* Estilo del botón para ver el PDF */
+.cuadro .btn {
+    background-color: #ff6347; /* Fondo naranja */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.cuadro .btn:hover {
+    background-color: #f81b03; /* Fondo naranja más oscuro al hacer hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 40px 20px;
+    border-top: 2px solid #ffffff; /* Línea blanca en la parte superior del footer */
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido del footer */
+    align-items: center;
+    width: 100%;
+}
+
+/* Sección de Enlaces Rápidos */
+.footer-left {
+    width: 40%;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.footer-left h4 {
+    margin-bottom: 10px;
+    color: #ffffff; /* Títulos blancos */
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin: 8px 0;
+}
+
+.footer-left ul li a {
+    color: #d1d1d1; /* Enlaces en gris claro */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-left ul li a:hover {
+    color: #ff6347; /* Enlaces en naranja al hacer hover */
+    text-decoration: underline;
+}
+
+/* Separador entre las dos secciones */
+.footer-separator {
+    height: 80%;
+    border-left: 2px solid #ffffff; /* Línea blanca de separación */
+    margin: 0 20px; /* Espacio alrededor de la línea */
+}
+
+/* Sección de redes sociales */
+.footer-right {
+    width: 40%;
+    text-align: center;
+}
+
+.footer-right h4 {
+    margin-bottom: 10px;
+    color: #ffffff; /* Títulos blancos */
+}
+
+/* Sección de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s, filter 0.3s; /* Añadimos transición al filtro */
+    filter: brightness(0) invert(1); /* Convierte los iconos a blancos */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efecto de hover en los iconos */
+    filter: brightness(0) invert(1) drop-shadow(0 4px 10px rgba(255, 255, 255, 0.4)); /* Añadimos sombra y mantenemos el color blanco */
+}
+
+
+/* Sección de derechos reservados */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: #d1d1d1; /* Color gris claro para los derechos reservados */
+}
+
+
+
+.navbar .menu a.tareas {
+    border: 2px solid #ffeb3b; /* Borde amarillo */
+    padding: 10px 15px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #ffffff; /* Color del texto blanco */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.navbar .menu a.tareas:hover {
+    color: #ff0000; /* Cambiar el color del texto a rojo cuando el cursor pase sobre el enlace */
+    border-color: #fbc02d; /* Borde amarillo más oscuro en hover */
+    transform: scale(1.05); /* Efecto de zoom al hacer hover */
+}
+
+
+/* Estilo para el botón "Ver Código" */
+.codigo-btn {
+    background-color: #4CAF50; /* Fondo verde para el botón "Ver Código" */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.codigo-btn:hover {
+    background-color: #45a049; /* Fondo verde más oscuro cuando se pasa el ratón */
+}

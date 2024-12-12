@@ -1,0 +1,201 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y fuente base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* Fondo negro oscuro, más adecuado para estilo gamer */
+    color: #fff; /* Texto blanco */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Fondo de la navbar */
+    padding: 15px 30px;
+    border-bottom: 3px solid #00A9FF; /* Azul brillante, estilo gamer */
+    box-shadow: 0 4px 10px rgba(0, 169, 255, 0.5); /* Sombra brillante */
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Para darle un toque más dinámico */
+}
+
+.navbar .menu a:hover {
+    color: #00A9FF; /* Azul tecnológico */
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #00A9FF, 0 0 10px #00A9FF; /* Efecto de neón al pasar el cursor */
+}
+
+/* Contenido Principal */
+.contenido-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    height: 100vh;
+    text-align: center;
+}
+
+.inicio-contenedor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.imagen-izquierda img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5); /* Sombra más fuerte para mayor profundidad */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.imagen-izquierda img:hover {
+    transform: scale(1.1); /* Escala de imagen al hacer hover */
+    filter: brightness(1.1); /* Brillo aumentado para resaltar */
+}
+
+.texto-derecha h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Para mayor énfasis */
+    text-shadow: 2px 2px 5px rgba(0, 169, 255, 0.8); /* Sombra azul futurista */
+}
+
+.texto-derecha p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Botón Azul Tecnológico */
+.cta-btn {
+    background-color: #00A9FF;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 169, 255, 0.5); /* Sombra futurista */
+    border: 2px solid #00A9FF;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 169, 255, 0.8), 0 0 20px rgba(0, 169, 255, 0.6);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    border-top: 2px solid #00A9FF;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-left, .footer-right {
+    width: 40%;
+    text-align: center;
+}
+
+.footer-left h4, .footer-right h4 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #00A9FF;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin: 8px 0;
+}
+
+.footer-left ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-left ul li a:hover {
+    color: #00A9FF;
+    transform: scale(1.1);
+}
+
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1); /* Íconos blancos */
+    transition: 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1) drop-shadow(0 4px 10px rgba(255, 255, 255, 0.5)); /* Efecto al pasar el cursor */
+}
+
+/* Derechos reservados */
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: #d1d1d1;
+    font-weight: 300;
+}
